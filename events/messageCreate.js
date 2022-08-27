@@ -1,7 +1,6 @@
 const Levels = require('discord-xp');
-const { database } = require('../config.json');
 
-Levels.setURL(database)
+Levels.setURL(process.env.DATABASE)
 
 module.exports = {
     name: "messageCreate",

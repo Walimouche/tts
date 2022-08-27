@@ -1,12 +1,12 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { Client, Collection } = require('discord.js');
-const { token, database } = require('./config.json');
-const mongoose = require('mongoose');
+require('dotenv').config()
+const mongoose = require('mongoose')
 
 const client = new Client({ intents: 3276799 });
 
-mongoose.connect(database, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
+mongoose.connect(process.env.DATABASE, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
 	console.log("Connected to MongoDB");
 }).catch(err => {
 	console.log(err);
@@ -79,4 +79,4 @@ process.on("unhandledRejection", (reason, promise) => {
 })
 process.on("warning", (...args) => console.warn(...args))
 
-client.login(token);
+client.login(process.env.TOKEN);
