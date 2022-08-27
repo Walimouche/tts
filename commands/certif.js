@@ -10,9 +10,7 @@ module.exports = {
 			let embed = new MessageEmbed()
 				.setColor("#a8dacd")
 				.setTitle("Faites-vous certifier !")
-				.setDescription(":IconHelpCircle: Vous et/ou vos projets ont des qualités à mettre en avant ? Alors faites vous évaluer pour bénéficier de cet avantage. \n\nAvec une certification, vous avez la possibilité de faire apparaître vos annonces de recrutement dans \n" +
-					"vos-profils ou encore \n" +
-					"vos-projets et être mit en avant par un des rôles :BadgeProjetsCertifis: @deleted-role et :BadgeProfilsCertifis: @deleted-role.\"")
+				.setDescription("<:IconHelpCircle:1012700125115711528> Vous et/ou vos projets ont des qualités à mettre en avant ? Alors faites vous évaluer pour bénéficier de cet avantage. \n\nAvec une certification, vous avez la possibilité de faire apparaître vos annonces de recrutement dans vos-profils ou encore vos-projets et être mit en avant par un des rôles <:BadgeProfilsCertifis:1012653784423473152> <@&1011925902357176361> et <:BadgeProjetsCertifis:1012653785925030008> <@&1011925917062414408>.")
 				.setFooter({ text: "Cliquez sur ce bouton pour changer toutes vos perceptions du recrutement en vous faisant certifier !"})
 
 			const button = new MessageActionRow()
