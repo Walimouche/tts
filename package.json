@@ -1,0 +1,24 @@
+{
+  "name": "tts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "node deploy-commands.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/rest": "^1.0.1",
+    "canvacord": "^5.0.8",
+    "discord-api-types": "^0.37.0",
+    "discord-html-transcripts": "^1.2.3",
+    "discord-xp": "^1.0.6",
+    "discord.js": "^13.6.0",
+    "glob": "^7.2.0",
+    "mongoose": "^5.9.25"
+  }
+}
