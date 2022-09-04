@@ -22,7 +22,13 @@ module.exports = {
 				.setTitle("Nouveau message de TrouveTonStaff")
 				.setDescription(text)
 			await member.send({ embeds: [embed] })
-			await interaction.reply("Message envoyé.")
+
+			let confirmEmbed = new MessageEmbed()
+				.setColor("#a8dacd")
+				.setTitle("Message envoyé")
+				.setDescription(`Contenu du message : \n${text}`)
+
+			await interaction.reply({ embeds: [confirmEmbed] })
 		} else {
 			await interaction.reply({ content: "Vous n'avez pas la permission d'utiliser cette commande.", ephemeral: true })
 		}

@@ -12,6 +12,10 @@ const button = new MessageActionRow()
             .setLabel("Giveaways")
             .setStyle("PRIMARY"),
         new MessageButton()
+            .setCustomId("rs-button")
+            .setLabel("Réseaux")
+            .setStyle("PRIMARY"),
+        new MessageButton()
             .setCustomId("collab-button")
             .setLabel("Collaboration")
             .setStyle("PRIMARY"),
@@ -30,6 +34,11 @@ const rolesEmbed = new MessageEmbed()
         {
             name: "<:IconGift:1012655743117312060> Giveaway",
             value: "Mention des giveaways.",
+            inline: true
+        },
+        {
+            name: "<:IconAnnoucement:1012655693553213451> Réseaux",
+            value: "Mentions relatives à nos réseaux sociaux.",
             inline: true
         },
         {
